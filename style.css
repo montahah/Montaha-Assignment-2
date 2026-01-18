@@ -43,7 +43,7 @@
   display: none;
 }
 /* Banner Section */
-.Banner {
+.banner {
   background-image: url("./assets/hero-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -115,6 +115,14 @@
   }
   .hamburger {
     display: inline;
+  }
+  .banner {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .banner-title {
+    font-size: 2.5rem;
   }
 }
 /* Medium Device */
