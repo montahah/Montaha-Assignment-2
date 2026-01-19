@@ -16,7 +16,23 @@
   font-size: 1rem;
   font-weight: 600;
   border: none;
+  cursor: pointer;
 }
+.btn:hover {
+  transition: 0.1s ease-in-out;
+  box-shadow: 0 3px 27px 0 rgba(255, 0, 136, 0.5);
+  transform: scale(1.03);
+}
+
+.badge:hover,
+.host-card:hover,
+.techwave-single-card:hover,
+.episode-single-card:hover {
+  transition: 0.1s ease-in-out;
+  box-shadow: 0 3px 27px 0 rgba(20, 20, 20, 0.5);
+  transform: scale(1.01);
+}
+
 /* Main Styles */
 
 /* Navbar Styles */
@@ -79,6 +95,7 @@
   border: none;
   top: 10%;
   right: 20%;
+  cursor: pointer;
 }
 .banner-title {
   font-size: 3.9rem;
@@ -486,8 +503,13 @@ iframe {
     justify-content: center;
   }
   .host-container {
-    padding: 0;
+    padding-bottom: 0px;
+
     max-width: 500px;
+  }
+  .host {
+    background-color: #1a0b2e;
+    padding-bottom: 50px;
   }
   .footer-container {
     max-width: 300px;
