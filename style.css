@@ -158,7 +158,66 @@
   font-weight: 200;
   text-transform: uppercase;
 }
+/* Techwave Section */
+.techwave {
+  background-color: #230e3d;
+  text-align: center;
+  color: white;
+  padding: 120px 0;
+}
+.techwave-container {
+  max-width: 1200px;
 
+  margin: 0 auto;
+}
+.techwave-title {
+  padding-bottom: 40px;
+  font-size: 3rem;
+}
+
+.techwave-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 30px;
+  max-height: 780px;
+  /* border: 1px solid tomato; */
+}
+.techwave-single-card {
+  /* border: 2px solid tomato; */
+  background-color: rgba(53, 17, 101, 0.4);
+  border-radius: 40px;
+  padding: 40px;
+  padding-bottom: 0;
+  color: white;
+  /* border: 1px solid red; */
+  text-align: left;
+}
+.techwave-single-card > h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 16px 0;
+}
+.techwave-single-card > p {
+  font-size: 1rem;
+  opacity: 60%;
+  line-height: 24px;
+  /* border: 1px solid red; */
+}
+.card-1 {
+  grid-row: span 2;
+  padding: 107px 40px;
+}
+.card-2 {
+  grid-column: span 2;
+}
+.card-3 {
+  grid-column: span 2;
+}
+.card-4 {
+  grid-column: span 2;
+  padding-bottom: 40px;
+}
 /* Small Device */
 @media screen and (max-width: 576px) {
   .menu-links {
@@ -191,6 +250,20 @@
   .about-line {
     max-width: 400px;
     margin: 30px auto;
+  }
+  .techwave {
+    padding: 50px 20px;
+  }
+  .techwave-cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 16px;
+    max-height: 100%;
+  }
+  .techwave-single-card {
+    border-radius: 24px;
+    padding: 24px;
   }
 }
 /* Medium Device */
