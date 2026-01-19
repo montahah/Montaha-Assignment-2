@@ -114,7 +114,7 @@
   margin: 0 auto;
   text-align: center;
   color: white;
-  /* border: 1px solid red; */
+  /*  */
   /* border: 1px solid tomato; */
 }
 .podcast-headline {
@@ -190,7 +190,7 @@
   padding: 40px;
   padding-bottom: 0;
   color: white;
-  /* border: 1px solid red; */
+  /*  */
   text-align: left;
 }
 .techwave-single-card > h3 {
@@ -202,7 +202,7 @@
   font-size: 1rem;
   opacity: 60%;
   line-height: 24px;
-  /* border: 1px solid red; */
+  /*  */
 }
 .card-1 {
   grid-row: span 2;
@@ -272,28 +272,6 @@ iframe {
   gap: 10px;
   align-items: center;
 }
-/* Footer Section */
-.footer {
-  /* background-color: #230e3d; */
-  background-image: url("./assets/footer-bg.png");
-  background-position: center;
-  padding: 100px;
-}
-.footer-container {
-  max-width: 550px;
-  margin: 0 auto;
-  color: white;
-  text-align: center;
-}
-
-.footer-logo {
-  margin-bottom: 32px;
-}
-.footer-logos {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  margin-bottom: 32px;
-}
 /* Host Section */
 .host {
   background-color: #1a0b2e;
@@ -346,19 +324,71 @@ iframe {
   justify-content: center;
   align-items: center;
 }
-.host-social-logo {
-  /* padding: 12.5px;
-  border: 1px solid #533c72;
-  border-radius: 50%; */
+/* Footer Section */
+.footer {
+  /* background-color: #230e3d; */
+  background-image: url("./assets/footer-bg.png");
+  background-position: center;
+  padding: 100px;
+}
+.footer-container {
+  max-width: 550px;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+  /* border: 1px solid white; */
+}
+.footer-logo1 img {
+  margin-bottom: 32px;
+  width: 400px;
+}
+.footer-logo {
+  /* max-width: 100%; */
+}
+
+.footer-logos {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+  gap: 30px;
+  margin-bottom: 50px;
+  /*  */
+}
+.footer-single-logo p {
+  opacity: 60%;
+  white-space: nowrap;
+}
+.footer-copyright {
+  opacity: 60%;
+  white-space: nowrap;
+  font-weight: 200;
+}
+.footer-single-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
 }
 
 /* Small Device */
 @media screen and (max-width: 576px) {
-  .menu-links {
-    display: none;
-  }
+  .menu-links,
   .nav-button {
     display: none;
+  }
+  .banner {
+    background-image: url("./assets/bg-image-mobile.png");
+    background-position: center;
+    background-size: cover;
+  }
+  .img-circle {
+    max-width: 60%;
+  }
+  .img-mic {
+    max-width: 15%;
   }
   .nav-logo img {
     max-width: 70%;
@@ -375,7 +405,10 @@ iframe {
     /* border: 1px solid red; */
   }
   .about-podcast {
-    padding: 50px;
+    padding: 50px 20px;
+  }
+  .podcast-container {
+    max-width: 450px;
   }
   .podcast-numbers {
     grid-template-columns: repeat(2, 1fr);
@@ -386,27 +419,55 @@ iframe {
     margin: 30px auto;
   }
   .techwave {
-    padding: 50px 20px;
+    padding: 50px 0px;
   }
+  .techwave-container {
+    max-width: 450px;
+    /* border: 1px solid white; */
+  }
+  .techwave-title {
+    font-size: 2rem;
+  }
+  .episode-title {
+    font-size: 2rem;
+  }
+
   .techwave-cards {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1, 1fr);
     gap: 16px;
     max-height: 100%;
+
+    /* border: 1px solid white; */
   }
   .techwave-single-card {
     border-radius: 24px;
-    padding: 24px;
-  }
-  .episode-cards {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 30px;
-    justify-content: center;
-    align-items: center;
     padding: 20px;
   }
+  .episode-container {
+    max-width: 400px;
+    /* border: 1px solid white; */
+  }
+  .episode-cards {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 480px;
+    text-align: center;
+    /* border: 1px solid white; */
+  }
+  .episode-container {
+    /* border: 1px solid white; */
+    max-width: 500px;
+    padding: 50px 0;
+  }
+  iframe {
+    width: 480px;
+    height: 250px;
+  }
+
   .feature-title {
     font-size: 1.2rem;
   }
@@ -416,6 +477,37 @@ iframe {
     -webkit-box-orient: vertical;
     text-overflow: ellipsis;
     overflow: hidden;
+  }
+  .host-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  .host-social {
+    justify-content: center;
+  }
+  .host-container {
+    padding: 0;
+    max-width: 500px;
+  }
+  .footer-container {
+    max-width: 300px;
+    max-height: 168px;
+  }
+  .footer-logos {
+    flex-wrap: wrap;
+  }
+  .footer-logo1 img {
+    margin-bottom: 32px;
+    width: 250px;
+  }
+  .footer {
+    background-image: url("./assets/footerImage.png");
+    background-size: cover;
+
+    padding: 40px;
+    padding-bottom: 100px;
+  }
+  .footer-copyright {
   }
 }
 /* Medium Device */
