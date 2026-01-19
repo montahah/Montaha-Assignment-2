@@ -294,6 +294,63 @@ iframe {
   grid-template-columns: repeat(4, 1fr);
   margin-bottom: 32px;
 }
+/* Host Section */
+.host {
+  background-color: #1a0b2e;
+  padding-bottom: 120px;
+}
+.host-container {
+  max-width: 1200px;
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+}
+.host-title {
+  font-size: 3rem;
+  margin-bottom: 40px;
+}
+
+.host-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  gap: 24px;
+  background-color: rgba(53, 17, 101, 0.4);
+  border-radius: 40px;
+  padding: 40px;
+}
+.host-name {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+.host-description {
+  font-size: 1rem;
+  opacity: 60%;
+  font-weight: 200;
+  margin-bottom: 16px;
+}
+.host-social {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  text-align: center;
+}
+.host-social a {
+  width: 40px;
+  height: 40px;
+  padding: 12px;
+  border: 1px solid #533c72;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.host-social-logo {
+  /* padding: 12.5px;
+  border: 1px solid #533c72;
+  border-radius: 50%; */
+}
 
 /* Small Device */
 @media screen and (max-width: 576px) {
