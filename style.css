@@ -218,6 +218,29 @@
   grid-column: span 2;
   padding-bottom: 40px;
 }
+/* Footer Section */
+.footer {
+  /* background-color: #230e3d; */
+  background-image: url("./assets/footer-bg.png");
+  background-position: center;
+  padding: 100px;
+}
+.footer-container {
+  max-width: 550px;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+  /* border: 1px solid red; */
+}
+
+.footer-logo {
+  margin-bottom: 32px;
+}
+.footer-logos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 32px;
+}
 /* Small Device */
 @media screen and (max-width: 576px) {
   .menu-links {
