@@ -580,7 +580,7 @@ iframe {
   }
 }
 /* Medium Device */
-@media screen and (min-width: 577px) and (max-width: 1200px) {
+@media screen and (min-width: 577px) and (max-width: 992px) {
   .about-podcast,
   .techwave,
   .host,
