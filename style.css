@@ -18,6 +18,51 @@
   border: none;
   cursor: pointer;
 }
+.btn,
+.badge {
+  border: 1px solid transparent;
+  box-shadow:
+    0 0 1px #f7e93f,
+    0 0 2px #fb09b4,
+    0 0 3px #9100f8,
+    0 0 4px #f7e93f,
+    0 0 5px #fb09b4,
+    0 0 6px #9100f8,
+    0 0 70px #f7e93f;
+  /* animation: colorchange 4s infinite; */
+  animation: glow 3s infinite;
+}
+@keyframes glow {
+  0%,
+  100% {
+    box-shadow:
+      0 0 0.1px #f7e93f,
+      0 0 0.2px #fb09b4,
+      0 0 0.3px #9100f8,
+      0 0 0.4px #f7e93f,
+      0 0 0.5px #fb09b4,
+      0 0 0.6px #9100f8,
+      0 0 0.7px #f7e93f;
+    border-color: #f7e93f;
+  }
+  25% {
+    border-color: #fb09b4;
+  }
+  50% {
+    box-shadow:
+      0 0 1px #9100f8,
+      0 0 2px #f7e93f,
+      0 0 3px #fb09b4,
+      0 0 4px #9100f8,
+      0 0 5px #f7e93f,
+      0 0 6px #fb09b4,
+      0 0 20px #9100f8;
+    border-color: #9100f8;
+  }
+  75% {
+    border-color: #f7e93f;
+  }
+}
 .btn:hover {
   transition: 0.1s ease-in-out;
   box-shadow: 0 3px 27px 0 rgba(255, 0, 136, 0.5);
@@ -113,7 +158,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 8px;
+  gap: 20px;
 }
 .banner-button2 {
   background: none;
@@ -426,10 +471,12 @@ iframe {
   }
   .podcast-container {
     max-width: 450px;
+    margin: 0 auto;
   }
   .podcast-numbers {
     grid-template-columns: repeat(2, 1fr);
     gap: 80px;
+    margin: 0 auto;
   }
   .about-line {
     max-width: 400px;
@@ -533,3 +580,37 @@ iframe {
   }
 }
 /* Medium Device */
+@media screen and (min-width: 577px) and (max-width: 1200px) {
+  .about-podcast,
+  .techwave,
+  .host,
+  .episode-container {
+    padding: 80px 20px;
+  }
+  .episode-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+  }
+  .episode-single-card {
+    max-width: 900px;
+    margin: 0 auto;
+    /* border: 10px solid white; */
+  }
+  .feature-card-content {
+    max-width: 800px;
+  }
+  iframe {
+    width: 100%;
+  }
+  .podcast-numbers {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0;
+    gap: 60px;
+    justify-items: center;
+  }
+  .techwave-container,
+  .techwave-single-card {
+    overflow-y: hidden;
+  }
+}
